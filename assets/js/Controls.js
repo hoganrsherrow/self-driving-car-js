@@ -13,13 +13,11 @@ class Controls {
                 this.forward = true;
                 break;
         }
-
-        // this.#addKeyboardListeners();
     }
 
     #addKeyboardListeners() {
         document.onkeydown = (event) => {
-            switch(event.key) {
+            switch(event.key){
                 case "ArrowLeft":
                     this.left = true;
                     break;
@@ -49,7 +47,6 @@ class Controls {
                     this.reverse = false;
                     break;
             }
-            console.table(this);
         }
     }
 }
